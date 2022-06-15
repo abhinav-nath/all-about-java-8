@@ -24,7 +24,7 @@ public class DefaultMethodDemo implements TestInterface {
     System.out.println(a * a);
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     DefaultMethodDemo d = new DefaultMethodDemo();
     d.square(4);
 

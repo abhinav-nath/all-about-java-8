@@ -42,9 +42,9 @@ enum Gender {MALE, FEMALE}
 
 class Person {
 
-  private String name;
-  private Gender gender;
-  private int age;
+  private final String name;
+  private final Gender gender;
+  private final int age;
 
   public Person(String theName, Gender theGender, int theAge) {
     this.name = theName;

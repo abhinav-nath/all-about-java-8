@@ -20,7 +20,7 @@ public class DefaultMethodAmbiguity implements InterfaceA, InterfaceB {
     InterfaceB.super.defaultMethod();
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     DefaultMethodAmbiguity d = new DefaultMethodAmbiguity();
 
     // executing default methods
