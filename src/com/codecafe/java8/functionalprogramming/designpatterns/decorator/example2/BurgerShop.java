@@ -5,7 +5,7 @@ import java.util.function.Function;
 // it will do the job of adding the decoration
 public class BurgerShop {
 
-  Function<Burger, Burger> decoration;
+  private final Function<Burger, Burger> decoration;
 
   public BurgerShop(Function<Burger, Burger> decoration) {
     this.decoration = decoration;

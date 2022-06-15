@@ -11,8 +11,8 @@ public class MyArrayList {
   }
 
   public void forEach(Consumer<Object> action) {
-    for (int i = 0; i < elements.length; i++)
-      action.accept(elements[i]);
+    for (Object element : elements)
+      action.accept(element);
   }
 
 }

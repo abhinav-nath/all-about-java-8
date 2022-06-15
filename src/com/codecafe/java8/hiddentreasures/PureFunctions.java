@@ -21,10 +21,7 @@ public class PureFunctions {
 
   public static boolean isGT3(int number) {
     System.out.println("isGT3 called for number " + number);
-    if (number > 3)
-      return true;
-    else
-      return false;
+    return number > 3;
   }
 
   public static int doubleIt(int number) {
@@ -34,10 +31,7 @@ public class PureFunctions {
 
   public static boolean isEven(int number) {
     System.out.println("isEven called for number " + number);
-    if (number % 2 == 0)
-      return true;
-    else
-      return false;
+    return number % 2 == 0;
   }
 
 }

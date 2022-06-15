@@ -7,7 +7,7 @@ public class ComparatorLambdaExample {
   public static void main(String[] args) {
 
     // prior to Java 8
-    Comparator<Integer> comparator = new Comparator<Integer>() {
+    Comparator<Integer> comparator = new Comparator<>() {
 
       @Override
       public int compare(Integer arg0, Integer arg1) {
