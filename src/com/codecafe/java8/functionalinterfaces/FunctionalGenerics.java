@@ -5,5 +5,7 @@ package com.codecafe.java8.functionalinterfaces;
  */
 @FunctionalInterface
 public interface FunctionalGenerics<T, R> {
-  public R execute(T t);
+
+  R execute(T t);
+
 }

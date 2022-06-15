@@ -3,9 +3,8 @@ package com.codecafe.java8.functionalprogramming.compostion;
 public class CompositionDemo {
 
   public static void main(String[] args) {
-
-    Function<Square, Integer> fun1 = s -> s.getArea();
-    Function<Integer, Double> fun2 = area -> Math.sqrt(area);
+    Function<Square, Integer> fun1 = Square::getArea;
+    Function<Integer, Double> fun2 = Math::sqrt;
 
     Function<Square, Double> getSide = fun2.compose(fun1);
 

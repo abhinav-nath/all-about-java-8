@@ -6,7 +6,7 @@ public class FunctionalGenericsDemo {
     FunctionalGenerics<String, String> fun1 = s -> s.substring(3, 7);
     System.out.println("substring : " + fun1.execute("HowCool"));
 
-    FunctionalGenerics<String, Integer> fun2 = s -> s.length();
+    FunctionalGenerics<String, Integer> fun2 = String::length;
     System.out.println("length : " + fun2.execute("HowCool"));
 
     FunctionalGenerics<Integer, Integer> fun3 = n -> n * n;
