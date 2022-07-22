@@ -111,13 +111,11 @@ aBlockOfCode = () -> System.out.println("Hello World");
 But till then let us practice writing few more simple lambda expressions:
 
 Ex:
-
 ```java
 greetingFunction = () -> System.out.println("Hello World");
 ```
 
 Ex:
-
 ```java
 doubleTheNumberFunction = (int a) -> return a * 2;
 ```
@@ -129,19 +127,16 @@ doubleTheNumberFunction = (int a) -> a * 2;
 ```
 
 Ex:
-
 ```java
 addFunction = (int a, int b) -> a + b;
 ```
 
 Ex (with body):
-
 ```java
 safeDivideFunction = (int a, int b)  -> { if(b==0) return 0; return a/b; };
 ```
 
 Ex:
-
 ```java
 stringLengthCountFunction = (String s) -> s.length();
 ```
@@ -271,11 +266,15 @@ Now we figured have out how to declare our lambda expressions.
 
 **Here is the biggest question:**
 
-How is this `Greeting helloWorldGreeting = new HelloWorldGreeting();` different from `Greeting lambdaGreeting = () -> System.out.println("Hello World");` ?
+How is this `Greeting helloWorldGreeting = new HelloWorldGreeting();`
 
-`Greeting helloWorldGreeting = new HelloWorldGreeting();` -> Here we are creating an instance of a specific implementation of `Greeting` interface.
+different from
 
-`Greeting lambdaGreeting = () -> System.out.println("Hello World");` -> Here we are creating a lambda expression which is in a way implementing the only method in the `Greeting` interface.
+`Greeting lambdaGreeting = () -> System.out.println("Hello World");` ?
+
+- `Greeting helloWorldGreeting = new HelloWorldGreeting();` - Here we are creating an instance of a specific implementation of `Greeting` interface.
+
+- `Greeting lambdaGreeting = () -> System.out.println("Hello World");` - Here we are creating a lambda expression which is in a way implementing the only method in the `Greeting` interface.
 
 Notice that
 - `helloWorldGreeting.perform(); // prints "Hello World"`
