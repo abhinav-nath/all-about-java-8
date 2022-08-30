@@ -2,20 +2,30 @@ package com.codecafe.java8.streams.model;
 
 public class Person {
 
-  private final String name;
+  private final String firstName;
+  private final String lastName;
   private final Gender gender;
   private final int age;
   private final int numberOfCars;
 
-  public Person(String theName, Gender theGender, int theAge, int numberOfCars) {
-    this.name = theName;
-    this.gender = theGender;
-    this.age = theAge;
+  public Person(String firstName, String lastName, Gender gender, int age, int numberOfCars) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.gender = gender;
+    this.age = age;
     this.numberOfCars = numberOfCars;
   }
 
-  public String getName() {
-    return name;
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public String getFullName() {
+    return firstName + " " + lastName;
   }
 
   public Gender getGender() {
@@ -28,11 +38,6 @@ public class Person {
 
   public int getNumberOfCars() {
     return numberOfCars;
-  }
-
-  @Override
-  public String toString() {
-    return "Person{" + "name='" + name + '\'' + ", gender=" + gender + ", age=" + age + ", numberOfCars=" + numberOfCars + '}';
   }
 
 }
