@@ -22,7 +22,7 @@ public class Java7Style_Solution_2 {
     );
 
     // Sort list by last name
-    Collections.sort(people, new Comparator<>() {
+    Collections.sort(people, new Comparator<Person>() {
 
       @Override
       public int compare(Person p1, Person p2) {
