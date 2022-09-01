@@ -40,4 +40,15 @@ public class Person {
     return numberOfCars;
   }
 
+  @Override
+  public String toString() {
+    return "Person{" +
+      "firstName='" + firstName + '\'' +
+      ", lastName='" + lastName + '\'' +
+      ", gender=" + gender +
+      ", age=" + age +
+      ", numberOfCars=" + numberOfCars +
+      '}';
+  }
+
 }

@@ -83,13 +83,13 @@ public class UseOfStreamsPersonExample {
 
     System.out.println("names of males above 35 in upper case : " + malesAbove35 + "\n");
 
-    // get the names of people sorted by their ages
-    List<String> sortedByAge = people.stream()
-                                     .sorted(Comparator.comparing(Person::getAge))
-                                     .map(Person::getFullName)
+    // Top 3 oldest people
+    List<Person> sortedByAge = people.stream()
+                                     .sorted(Comparator.comparing(Person::getAge).reversed())
+                                     .limit(3)
                                      .collect(Collectors.toList());
 
-    System.out.println("people sorted by age : " + sortedByAge + "\n");
+    System.out.println("Top 3 people sorted by age : " + sortedByAge + "\n");
 
     // get all people having first name as John sorted by their age
     List<Person> johnsSortedByAge = people.stream()
