@@ -15,6 +15,9 @@ public class JoinStringsUsingComma {
                               .map(s -> s.toUpperCase())
                               .collect(Collectors.joining(", ")));
 
+    // comma separated strings within single quotes
+    System.out.println(strings.stream()
+                              .collect(Collectors.joining("', '", "'", "'")));
   }
 
 }
