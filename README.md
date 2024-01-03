@@ -23,3 +23,8 @@ Detailed explanations and code examples of most of the new features introduced b
 - [Completable Future](./src/com/codecafe/java8/completablefuture "Completable Future")
 - [New Date-Time library](./src/com/codecafe/java8/datetime "New Date-Time library")
 - [Hidden Treasures](./src/com/codecafe/java8/hiddentreasures "Hidden Treasures")
+
+---
+<p align="center">
+  ⭐ Star this repository — it helps!
+</p>
