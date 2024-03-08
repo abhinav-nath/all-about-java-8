@@ -26,5 +26,5 @@ Detailed explanations and code examples of most of the new features introduced b
 
 ---
 <p align="center">
-  ⭐ Star this repository — it helps!
+  ⭐ Star this repository if it helped you!
 </p>
